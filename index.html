@@ -2,113 +2,98 @@
 <html lang="en">
 
 <head>
-    <title>Sharon Seungyu Han</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: pink;
-            color: black;
-            font-size: 10px;
-        }
-
-        .header {
-            background-color: skyblue;
-            padding: 1px;
-            border: 1px solid grey;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .row:after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        .col-6 {
-            width: 50%;
-            float: left;
-            padding: 15px;
-            box-sizing: border-box;
-        }
-
-        .col-s-10 {
-            width: 100%;
-        }
-
-        @media only screen and (min-width: 300px) {
-            body {
-                background-color: green;
-                font-size: 15px;
-            }
-            .header {
-                background-color: salmon;
-            }
-        }
-
-        @media only screen and (min-width: 768px) {
-            body {
-                background-color: black;
-                color: white;
-                font-size: 20px;
-            }
-            .header {
-                background-color: rgb(75, 74, 74);
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="header">
-        <a href="index.html" style="text-decoration:none; color:white">
-            <h1>About</h1>
-        </a>
-    </div>
-    <div class="row">
-
-        <div class="col-6 col-s-10">
-            <h2>Sharon Seungyu Han</h2>
-            <img id="new_img" src="mypict.jpg" onload="showImage()" width="400px" height="504px"
-                style="overflow: hidden; margin-left:5%; margin-top:5%;">
-
-            <p>
-                <strong>Major:</strong><br><br>
-                Computer Science at the University of Michigan
-            </p>
-
-            <p>
-                <strong>Interests:</strong><br><br>
-                Algorithm<br>
-                Operating System<br>
-                Cyber Security<br>
-                Debugging<br>
-                Metaverse<br>
-                Web/Mobile Application
-            </p>
-
-            <p>
-                <strong><a href="https://github.com/sharonsyh/" style="color:white">Visit my Github!</a></strong><br>
-                <strong><a href="https://medium.com/@sharon8935" style="color:white">Visit my Medium!</a></strong>
-            </p>
-        </div>
-
-        <div class="col-6 col-s-10">
-            <h2>Skillset</h2>
-
-            <h3>Backend</h3>
+    <header>
+        <nav>
             <ul>
-                <li>Java, Node.js</li>
-                <li>Spring Boot, Spring MVC, Spring Data JPA</li>
-                <li>Gradle</li>
-                <li>IntelliJ, Datagrip, Visual Studio Code, Vim</li>
-                <li>Git</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+        </nav>
+    </header>
 
-            <h3>DevOps
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my GitHub portfolio website! Here, you can learn more about me and my projects.</p>
+            <!-- Add your personal information and description here -->
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>R.Tee Oficial website</h3>
+                <p>Developed a comprehensive full-stack website for R.Tee, a renowned Producer from YG Entertainment, utilizing Java and JavaScript</p>
+            </div>
+            <div class="project">
+                <h3>Java Editor with C</h3>
+                <p>Enhanced readability of Java source code files by integrating HTML code into a C program to categorize and color-code elements</p>
+            </div>
+            <div class="project">
+                <h3>Twitter Influencer Finder</h3>
+                <p>Devised and implemented an algorithm using the C programming language to analyze follower-following relationships, identify influential users through random sampling, and efficiently determine the most frequently visited user with Dijkstra's priority queue algorithm, highlighting key influencers within the network.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skillset">
+                <h3>Backend</h3>
+                <ul>
+                    <li>Java, Node.js</li>
+                    <li>Spring Boot, Spring MVC, Spring Data JPA</li>
+                    <li>Gradle</li>
+                    <li>IntelliJ, Datagrip, Visual Studio Code, Vim</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div class="skillset">
+                <h3>DevOps</h3>
+                <ul>
+                    <li>AWS EC2, CloudFront, Beanstalk</li>
+                    <li>MySQL, MariaDB</li>
+                    <li>Tomcat, Nginx</li>
+                </ul>
+            </div>
+            <div class="skillset">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML5, CSS3, JS (ES6)</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="skillset">
+                <h3>Collaboration</h3>
+                <ul>
+                    <li>Jira</li>
+                    <li>Slack</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through the following channels:</p>
+            <ul>
+                <li>Email: sysharon@umich.edu</li>
+                <li>GitHub: <a href="https://github.com/sharonsyh">github.com/sharonsyh</a></li>
+                <!-- Add more contact information as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SHARON HAN</p>
+    </footer>
+</body>
+
+</html>
