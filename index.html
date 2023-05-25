@@ -6,99 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="profile-image">
-                <img src="mypict.jpg" alt="Profile Image" width="144" height="180">
-                <p>Student at University of Michigan studying Computer Science and Entrepreneurship</p>
-            </div>
-            <div class="profile-text">
-                <p>Welcome to my GitHub portfolio website! Here, you can learn more about me and my projects.</p>
-                <!-- Add your personal information and description here -->
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>R.Tee Official website</h3>
-                <p>Developed a comprehensive full-stack website for R.Tee, a renowned Producer from YG Entertainment, utilizing Java and JavaScript</p>
-            </div>
-            <div class="project">
-                <h3>Java Editor with C</h3>
-                <p>Enhanced readability of Java source code files by integrating HTML code into a C program to categorize and color-code elements</p>
-            </div>
-            <div class="project">
-                <h3>Twitter Influencer Finder</h3>
-                <p>Devised and implemented an algorithm using the C programming language to analyze follower-following relationships, identify influential users through random sampling, and efficiently determine the most frequently visited user with Dijkstra's priority queue algorithm, highlighting key influencers within the network.</p>
-            </div>
-            <!-- Add more projects as needed -->
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skillset">
-                <h3>Backend</h3>
-                <ul>
-                    <li>Java, Node.js</li>
-                    <li>Spring Boot, Spring MVC, Spring Data JPA</li>
-                    <li>Gradle</li>
-                    <li>IntelliJ, Datagrip, Visual Studio Code, Vim</li>
-                    <li>Git</li>
-                </ul>
-            </div>
-            <div class="skillset">
-                <h3>DevOps</h3>
-                <ul>
-                    <li>AWS EC2, CloudFront, Beanstalk</li>
-                    <li>MySQL, MariaDB</li>
-                    <li>Tomcat, Nginx</li>
-                </ul>
-            </div>
-            <div class="skillset">
-                <h3>Frontend</h3>
-                <ul>
-                    <li>HTML5, CSS3, JS (ES6)</li>
-                    <li>React</li>
-                </ul>
-            </div>
-            <div class="skillset">
-                <h3>Collaboration</h3>
-                <ul>
-                    <li>Jira</li>
-                    <li>Slack</li>
-                </ul>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="profile">
+                    <img src="mypict.jpg" alt="Profile Image" class="profile-image">
+                    <div class="profile-info">
+                        <h2 class="profile-name">Your Name</h2>
+                        <p class="profile-description">Student at University of Michigan studying Computer Science and Entrepreneurship</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me through the following channels:</p>
-            <ul>
-                <li>Email: sysharon@umich.edu</li>
-                <li>GitHub: <a href="https://github.com/sharonsyh">github.com/sharonsyh</a></li>
-                <!-- Add more contact information as needed -->
-            </ul>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="project">
+                    <h3 class="project-title">R.Tee Official website</h3>
+                    <p class="project-description">Developed a comprehensive full-stack website for R.Tee, a renowned Producer from YG Entertainment, utilizing Java and JavaScript</p>
+                </div>
+                <div class="project">
+                    <h3 class="project-title">Java Editor with C</h3>
+                    <p class="project-description">Enhanced readability of Java source code files by integrating HTML code into a C program to categorize and color-code elements</p>
+                </div>
+                <div class="project">
+                    <h3 class="project-title">Twitter Influencer Finder</h3>
+                    <p class="project-description">Devised and implemented an algorithm using the C programming language to analyze follower-following relationships, identify influential users through random sampling, and efficiently determine the most frequently visited user with Dijkstra's priority queue algorithm, highlighting key influencers within the network.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skillset">
+                    <h3 class="skillset-title">Backend</h3>
+                    <ul class="skillset-list">
+                        <li>Java, Node.js</li>
+                        <li>Spring Boot, Spring MVC, Spring Data JPA</li>
+                        <li>Gradle</li>
+                        <li>IntelliJ, Datagrip, Visual Studio Code, Vim</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="skillset">
+                    <h3 class="skillset-title">DevOps</h3>
+                    <ul class="skillset-list">
+                        <li>AWS EC2, CloudFront, Beanstalk</li>
+                        <li>MySQL, MariaDB</li>
+                        <li>Tomcat, Nginx</li>
+                    </ul>
+                </div>
+                <div class="skillset">
+                    <h3 class="skillset-title">Frontend</h3>
+                    <ul class="skillset-list">
+                        <li>HTML5, CSS3, JS (ES6)</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="skillset">
+                    <h3 class="skillset-title">Collaboration</h3>
+                    <ul class="skillset-list">
+                        <li>Jira</li>
+                        <li>Slack</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="contact-description">Feel free to reach out to me through the following channels:</p>
+                <ul class="contact-list">
+                    <li class="contact-item">Email: sysharon@umich.edu</li>
+                    <li class="contact-item">GitHub: <a href="https://github.com/sharonsyh">github.com/sharonsyh</a></li>
+                </ul>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 SHARON HAN</p>
+    <footer class="footer">
+        <p>&copy; 2023 Your Name</p>
     </footer>
 </body>
 
