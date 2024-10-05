@@ -11,14 +11,18 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f0f0f0;
+            color: #333;
         }
 
         header {
-            background-color: #333;
+            background-color: #6200ea;
             color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         nav ul {
@@ -26,11 +30,10 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: flex-end;
         }
 
         nav li {
-            margin-right: 15px;
+            margin-right: 25px;
         }
 
         nav a {
@@ -41,12 +44,16 @@
         }
 
         nav a:hover {
-            color: #f5f5f5;
-            border-bottom: 2px solid #fff;
+            color: #ffeb3b;
+            border-bottom: 2px solid #ffeb3b;
         }
 
         main {
-            padding: 40px;
+            padding: 40px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         section {
@@ -55,21 +62,21 @@
 
         h2 {
             margin-bottom: 20px;
-            font-size: 28px;
-            color: #333;
+            font-size: 32px;
+            color: #6200ea;
             border-bottom: 2px solid #ddd;
             padding-bottom: 10px;
         }
 
         h3 {
             margin-bottom: 10px;
-            font-size: 22px;
+            font-size: 24px;
             color: #333;
         }
 
         p {
-            line-height: 1.6;
-            color: #555;
+            line-height: 1.8;
+            color: #666;
         }
 
         .profile-image img {
@@ -77,14 +84,26 @@
             height: 270px;
             border-radius: 10px;
             margin-right: 20px;
+            border: 5px solid #6200ea;
         }
 
-        .profile-text {
-            margin-top: 20px;
+        .profile-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
         }
 
-        .project, .skillset, .contact {
+        .project, .skillset, .contact, .award {
             margin-bottom: 30px;
+        }
+
+        .skillset ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skillset li {
+            margin-bottom: 10px;
         }
 
         ul {
@@ -97,22 +116,14 @@
         }
 
         footer {
-            background-color: #333;
+            background-color: #6200ea;
             color: #fff;
             padding: 20px;
             text-align: center;
             position: relative;
             bottom: 0;
             width: 100%;
-        }
-
-        .skillset ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .skillset li {
-            margin-bottom: 10px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .contact ul {
@@ -122,24 +133,48 @@
 
         .contact a {
             text-decoration: none;
-            color: #333;
+            color: #6200ea;
+            font-weight: 600;
         }
 
         .contact a:hover {
-            color: #555;
+            color: #333;
+            text-decoration: underline;
         }
 
-        .profile-container {
-            display: flex;
-            align-items: center;
+        /* Button Style */
+        .contact-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #6200ea;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .contact-button:hover {
+            background-color: #311b92;
+        }
+
+        .project, .experience-item, .award-item {
+            border-left: 4px solid #6200ea;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">
 </head>
 
 <body>
     <header>
+        <h1>Sharon Seungyu Han</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -211,7 +246,7 @@
         <!-- Experience Section -->
         <section id="experience">
             <h2>Experience</h2>
-            <div class="project">
+            <div class="experience-item">
                 <h3>Machine Learning Symbiotic Lab</h3>
                 <p>Research Intern | Ann Arbor, MI | June 2024 – Present</p>
                 <ul>
@@ -220,7 +255,7 @@
                     <li>Leveraged Kubernetes to deploy cluster-wide metrics aggregation to Prometheus, enabling seamless cloud-native monitoring.</li>
                 </ul>
             </div>
-            <div class="project">
+            <div class="experience-item">
                 <h3>The Michigan Daily</h3>
                 <p>Student Web Developer | Ann Arbor, MI | Oct 2023 – May 2024</p>
                 <ul>
@@ -228,7 +263,7 @@
                     <li>Collaborated cross-functionally with editorial and technical teams to streamline the integration of 2,500+ resident survey responses through automated data pipelines.</li>
                 </ul>
             </div>
-            <div class="project">
+            <div class="experience-item">
                 <h3>Deloitte</h3>
                 <p>Risk Advisory Cyber Security Consulting Intern | Seoul, Korea | June 2023 – August 2023</p>
                 <ul>
@@ -241,7 +276,7 @@
         <!-- Awards Section -->
         <section id="awards">
             <h2>Awards</h2>
-            <div class="award">
+            <div class="award-item">
                 <h3>Castle Placement & University of Michigan CPGO Pitch Competition Winner (Apr 2024)</h3>
                 <p>Led the development of the FLEAN device, a revolutionary volleyball training aid, from ideation through to advanced prototyping. Presented a detailed business plan, leading to a 1st place victory.</p>
             </div>
@@ -254,4 +289,15 @@
             <ul class="contact">
                 <li>Email: sysharon@umich.edu</li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/sharonseungyuhan/">linkedin.com/in/sharonseungyuhan</a></li>
-                <li>GitHub: <a href="https://
+                <li>GitHub: <a href="https://github.com/sharonsyh">github.com/sharonsyh</a></li>
+            </ul>
+            <a href="mailto:sysharon@umich.edu" class="contact-button">Get In Touch</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sharon Seungyu Han. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
